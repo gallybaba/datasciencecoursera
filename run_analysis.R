@@ -21,7 +21,6 @@ testData$classificationCode <- testLabels$V1
 s1 <- as.numeric(rownames(trainData))
 s2 <- seq(from=nrow(trainData)+1, length.out=nrow(testData))
 s3 <- c(s1, s2)
-s
 com <- rbind(trainData, testData)
 rownames(com) <- s3
 colnames(com) <- c(as.character(features$V2), "subject", "classificationCode")
